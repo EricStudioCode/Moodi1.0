@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -20,6 +21,8 @@ public class FirstFragment extends Fragment {
 
     private static final int RC_SIGN_IN = 42;
 
+    private Control control;
+
     @Override
     public View onCreateView(
             LayoutInflater inflater, ViewGroup container,
@@ -32,6 +35,8 @@ public class FirstFragment extends Fragment {
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        control = new Control();
 
         view.findViewById(R.id.button_first).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,6 +51,13 @@ public class FirstFragment extends Fragment {
                         RC_SIGN_IN);
             }
         });
+
+        view.findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                String data = ((TextView)(((View)view.getParent()).findViewById(R.id.textView))).getText().toString();
+                control.insertSample(new Sample(data));
+            }
+        });
     }
 
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -56,7 +68,7 @@ public class FirstFragment extends Fragment {
 
             FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
-            System.out.println("abc");
+            System.out.println(user.getUid());
         }
     }
 }
