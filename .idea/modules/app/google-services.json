@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "622394919574",
+    "firebase_url": "https://moodi10.firebaseio.com",
+    "project_id": "moodi10",
+    "storage_bucket": "moodi10.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:622394919574:android:895071d6fb842dad2890b7",
+        "android_client_info": {
+          "package_name": "com.example.moodi10"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "622394919574-q07cfb7okmrbovgj9slj7n3p40ttmsci.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.moodi10",
+            "certificate_hash": "2304b353b8f0fd3a6f1b7d8b30dfff5a516dff6f"
+          }
+        },
+        {
+          "client_id": "622394919574-a9uda5lpcn781jiv30dop7an6di7mc8n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWutVRxvHeTgzzjkVOPX7FmNoKNmWjguU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "622394919574-a9uda5lpcn781jiv30dop7an6di7mc8n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
